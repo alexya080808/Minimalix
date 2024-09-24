@@ -52,18 +52,19 @@ h1 a {
     color: white;
     background-color: black;
     padding: 0.3rem 1rem;
-    /* Relativo a 14px (font-size declarado acima) */
+    /* 0.3rem * 14px = 4,2px (cima, baixo)
+    Relativo a 14px (font-size declarado acima) */
     border-radius: 5px;
 }
 header {
     /* Define o fundo branco, posição fixa, e z-index para garantir que o cabeçalho esteja sempre visível */
     background-color: white;
     position: sticky;
-    top: 0;
+    top: 0; /* Ref. para fixar (Obrigatória) */
     z-index: 9999;
     /*  Para aparecer na frente. (Para garantir) */
 }
-header.limitador {
+header .limitador {
     /* Define um layout flexbox para alinhar o conteúdo do cabeçalho */
     display: flex;
     flex-direction: row;
@@ -99,7 +100,7 @@ h2 a {
 .menu a {
     /* Define estilo dos links dentro do menu, incluindo cor, alinhamento e altura */
     color: black;
-    font-weight: bold;
+    font-weight: bold; /* Negrito */
     background-color: #fff;
     display: flex;
     justify-content: center;
@@ -161,7 +162,7 @@ h2 a {
         /* O elemento termina totalmente opaco */
     }
 }
-/* Conteúdo Secundário "Section" Área de texto + 3 imagens/
+/* Conteúdo Secundário "Section" Área de texto + 3 imagens */
 front-end,
 .localizacao {
     /* Centraliza o texto nos elementos com as classes 'front-end' e 'localizacao' */
@@ -255,7 +256,7 @@ footer {
 /* Formatando Páginas Internas */
 .conteudo {
     /* Define a cor de fundo e arredonda os cantos da área de conteúdo */
-    background-color: #whitesmoke;
+    background-color: whitesmoke;
     padding: 0.7rem;
     border-radius: 7px;
 }
@@ -314,7 +315,7 @@ form {
     max-width: 500px;
     width: 95%;
     margin: auto;
-    background-color: #whitesmoke;
+    background-color: whitesmoke;
     padding: 1rem;
     border-radius: 18px;
 }
